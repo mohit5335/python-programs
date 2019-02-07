@@ -1,9 +1,9 @@
 import json
 import requests
-api_key="AIzaSyBDDjEs_l2v72z3PjWuQ7QsTgQOngUwTf4"
+api_key="  "   #enter API key 
 url="https://maps.googleapis.com/maps/api/place/textsearch/json?"
 image="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference="
-name=input("Enter name of the place\n")
+name=input("Enter name of the place\n")        #name of place you want to search
 page=requests.get(url+'query='+name+'&key='+api_key)
 data=page.json()
 search=data['results']
